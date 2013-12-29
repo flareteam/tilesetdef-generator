@@ -43,7 +43,7 @@ def main():
 	map_name = "output"
 	for prop in root.find('properties').findall('property'):
 		if (prop.get('name') == "tileset"):
-			map_name = os.path.splitext(prop.get('value'))[0]
+			map_name = os.path.basename(os.path.splitext(prop.get('value'))[0])
 	map_image_name = map_name + ".png"
 	map_name += ".txt"
 

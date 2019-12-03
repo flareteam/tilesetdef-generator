@@ -1,6 +1,6 @@
 # Flare Tileset Definition Generator
 
-This script allows for easy creation of a tileset definition for Flare (http://flarerpg.org) using an existing Tiled TMX file. In addition, the script will also use ImageMagick to combine all of the partial tilesets it finds into one image.
+This script allows for easy creation of a tileset definition for Flare (http://flarerpg.org) using an existing Tiled TMX file.
 
 
 

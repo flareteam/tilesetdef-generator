@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 import os, sys
 import xml.etree.ElementTree as ET
 
@@ -29,7 +29,7 @@ def main():
 			break
 
 	if (tiled_file == ""):
-		print "No Tiled TMX file specified"
+		print("No Tiled TMX file specified")
 		return
 
 	parser = ET.parse(tiled_file)
@@ -82,7 +82,7 @@ def main():
 			map_file.write("[tileset]\n")
 			map_file.write("img=%s\n\n" % (tileset_image))
 
-			for i in range(start_index,end_index):
+			for i in range(int(start_index), int(end_index)):
 				map_file.write(getTile(i, tile_w, tile_h, tileoffset_x, tileoffset_y))
 
 			map_file.write("\n\n")
